@@ -13,9 +13,9 @@ import sys
 
 
 # hyperparameters
-H = 600  # number of hidden layer neurons
+H = 200  # number of hidden layer neurons
 batch_size = 10  # every how many episodes to do a param update?
-learning_rate = 1e-5
+learning_rate = 1e-6
 gamma = 0.99  # discount factor for reward
 decay_rate = 0.99  # decay factor for RMSProp leaky sum of grad^2
 resume = False  # resume from previous checkpoint?
@@ -169,4 +169,10 @@ while True:
  
 # stopping the library
 tracemalloc.stop()
+
+
+# In[ ]:
+
+
+
 
